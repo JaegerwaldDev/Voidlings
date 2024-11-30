@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "voidlings:block/black_acid_top",
+    "side": "voidlings:block/black_acid"
+  }
+}

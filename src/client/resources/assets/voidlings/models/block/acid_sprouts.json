@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "voidlings:block/acid_sprouts"
+  }
+}

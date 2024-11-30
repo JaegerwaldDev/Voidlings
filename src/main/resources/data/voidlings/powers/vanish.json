@@ -1,0 +1,38 @@
+{
+    "type": "origins:multiple",
+    "name": "Vanish",
+    "description": "Make an escape by vanishing into thin air.",
+    "invisibility": {
+        "type": "origins:prevent_feature_render",
+        "features": [
+            "armor",
+            "cape",
+            "elytra",
+            "head",
+            "held_item",
+            "shoulder_parrot",
+            "stuck_objects"
+        ],
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:invisibility"
+        }
+    },
+    "dissappear": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "function voidlings:vanish"
+        },
+        "cooldown": 600,
+        "hud_render": {
+            "should_render": true,
+            "inverted": true,
+            "bar_index": 0,
+            "sprite_location": "voidlings:textures/gui/resource_bar.png"
+        },
+        "key": {
+            "key": "key.origins.secondary_active"
+        }
+    }
+}

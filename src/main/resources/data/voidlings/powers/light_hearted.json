@@ -1,0 +1,23 @@
+{
+    "type": "origins:multiple",
+    "health_decrease": {
+        "type": "origins:attribute",
+        "modifier": {
+            "id": "*:*",
+            "attribute": "minecraft:generic.max_health",
+            "amount": -10.0,
+            "operation": "add_value"
+        }
+    },
+    "heart_texture": {
+        "type": "origins:status_bar_texture",
+        "texture_map": {
+            "minecraft:hud/heart/full": "voidlings:hud/heart/full",
+            "minecraft:hud/heart/half": "voidlings:hud/heart/half",
+            "minecraft:hud/heart/full_blinking": "voidlings:hud/heart/full_blinking",
+            "minecraft:hud/heart/half_blinking": "voidlings:hud/heart/half_blinking"
+        }
+    },
+    "name": "Light-Hearted",
+    "description": "You have half of a human's health bar."
+}

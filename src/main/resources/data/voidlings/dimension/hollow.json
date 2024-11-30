@@ -1,0 +1,11 @@
+{
+  "type": "voidlings:hollow",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "voidlings:hollow",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "voidlings:hollow"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+	"type": "origins:invulnerability",
+	"damage_condition": {
+		"type": "origins:in_tag",
+		"tag": "minecraft:is_fall"
+	},
+    "name": "Soft Landing",
+    "description": "Your legs will support all the velocity you've gathered from being in-air."
+}

@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "voidlings",
+	"version": "${version}",
+	"name": "Voidlings",
+	"description": "Adds the Voidling origin, plus extra content and weapons.",
+	"authors": [
+		"Jaegerwald",
+		"Proto_narrator"
+	],
+	"contact": {
+		"homepage": "https://jaegerwalddev.github.io/",
+		"sources": "https://github.com/Jaegerwald/Voidlings"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/voidlings/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.jaegerwald.voidlings.Voidlings"
+		],
+		"client": [
+			"dev.jaegerwald.voidlings.VoidlingsClient"
+		]
+	},
+	"mixins": [
+		"voidlings.mixins.json",
+		{
+			"config": "voidlings.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*",
+		"origins": "*",
+		"stellum": ">=0.1.0"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

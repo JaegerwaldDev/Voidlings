@@ -1,0 +1,16 @@
+{
+    "powers": [
+        "voidlings:light_hearted",
+        "voidlings:burn_in_daylight",
+        "voidlings:vanish",
+        "voidlings:dash",
+        "voidlings:fall_immunity"
+    ],
+    "icon": {
+        "id": "vex_armor_trim_smithing_template"
+    },
+    "order": 4,
+    "impact": 3,
+    "name": "Voidling",
+    "description": "Voidlings are silly creatures, who've been living at bedrock for billions of years. But in the past few decades, they've stepped foot on land, but aren't quite yet adjusted to their environment."
+}

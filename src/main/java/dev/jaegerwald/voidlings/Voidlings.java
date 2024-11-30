@@ -3,10 +3,9 @@ package dev.jaegerwald.voidlings;
 import dev.jaegerwald.voidlings.item.ModItemGroups;
 import dev.jaegerwald.voidlings.item.ModItems;
 import dev.jaegerwald.voidlings.block.ModBlocks;
+import dev.jaegerwald.voidlings.particle.Particles;
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
-import net.minecraft.particle.SimpleParticleType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,10 +17,6 @@ public class Voidlings implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger("Voidlings");
 
-
-	public static final SimpleParticleType SPARKLE_PARTICLE = FabricParticleTypes.simple();
-
-
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -29,6 +24,8 @@ public class Voidlings implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("smoke weed everyday");
+
+		Particles.register();
 
 		ModItemGroups.registerItemGroups();
 

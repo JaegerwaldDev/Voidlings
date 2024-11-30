@@ -1,6 +1,7 @@
 package dev.jaegerwald.voidlings.item;
 
 import dev.jaegerwald.voidlings.Voidlings;
+import dev.jaegerwald.voidlings.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -16,8 +17,11 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.ACID_SPROUTS))
                     .displayName(Text.translatable("itemgroup.voidlings.items"))
                     .entries((displayContext, entries) -> {
-                        entries.add(ModItems.BLACK_ACID);
-                        entries.add(ModItems.ACID_SPROUTS);
+                        entries.add(ModBlocks.BLACK_ACID);
+                        entries.add(ModBlocks.ACID_SPROUTS);
+                        entries.add(ModBlocks.ACID_MILDEW);
+                        entries.add(ModBlocks.ACID_MILDEW_CARPET);
+                        entries.add(ModBlocks.VOID_TANGLE);
                     }).build());
 
     public static void registerItemGroups() {

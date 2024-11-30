@@ -16,7 +16,6 @@ public class Particles {
     }
 
     private static <T extends ParticleEffect> ParticleType<T> register(String name, ParticleType<T> particle) {
-        Voidlings.LOGGER.info("Registering particle {}", name);
         return Registry.register(Registries.PARTICLE_TYPE, Identifier.of(Voidlings.MOD_ID, name), particle);
     }
 }

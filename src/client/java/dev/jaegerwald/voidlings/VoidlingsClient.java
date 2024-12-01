@@ -20,6 +20,8 @@ public class VoidlingsClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ACID_SPROUTS, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.VOID_TANGLE, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.VOID_TANGLE_PLANT, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.VOID_VINES, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.VOID_VINES_PLANT, RenderLayer.getCutout());
 
 		registerParticlesBcSplitSourcesBS();
 

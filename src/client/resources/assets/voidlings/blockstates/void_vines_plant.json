@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lamina=false": {
+      "model": "voidlings:block/void_vines_plant"
+    },
+    "lamina=true": {
+      "model": "voidlings:block/void_vines_plant_lamina"
+    }
+  }
+}

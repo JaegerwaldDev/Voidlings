@@ -17,11 +17,17 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.ACID_SPROUTS))
                     .displayName(Text.translatable("itemgroup.voidlings.items"))
                     .entries((displayContext, entries) -> {
+                        entries.add(ModItems.VOID_LAMINA);
+
                         entries.add(ModBlocks.BLACK_ACID);
                         entries.add(ModBlocks.ACID_SPROUTS);
+
                         entries.add(ModBlocks.ACID_MILDEW);
                         entries.add(ModBlocks.ACID_MILDEW_CARPET);
+
                         entries.add(ModBlocks.VOID_TANGLE);
+
+                        entries.add(ModBlocks.LIQUID_ACID);
                     }).build());
 
     public static void registerItemGroups() {

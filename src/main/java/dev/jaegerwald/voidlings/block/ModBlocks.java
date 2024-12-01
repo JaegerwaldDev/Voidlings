@@ -31,7 +31,7 @@ public class ModBlocks {
                             .sounds(BlockSoundGroup.WET_GRASS)
                             .offset(AbstractBlock.OffsetType.XZ)
                             .pistonBehavior(PistonBehavior.DESTROY)
-                            .luminance(state -> 10)
+                            .luminance(state -> 14)
             )
     );
 
@@ -69,6 +69,45 @@ public class ModBlocks {
                     AbstractBlock.Settings.create()
                             .mapColor(MapColor.CYAN)
                             .noCollision()
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.WET_GRASS)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block LIQUID_ACID = registerBlock("liquid_acid",
+            new SoulSandBlock(
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.BLACK)
+                            .instrument(NoteBlockInstrument.COW_BELL)
+                            .strength(1.0F)
+                            .velocityMultiplier(0.15F)
+                            .sounds(BlockSoundGroup.WET_SPONGE)
+                            .allowsSpawning(Blocks::always)
+                            .solidBlock(Blocks::always)
+                            .blockVision(Blocks::always)
+                            .suffocates(Blocks::always)
+            )
+    );
+
+    public static final Block VOID_VINES = registerBlock("void_vines",
+            new VoidVinesHeadBlock(
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.CYAN)
+                            .ticksRandomly()
+                            .noCollision()
+                            .luminance(VoidVines.getLuminanceSupplier(14))
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.WET_GRASS)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+    public static final Block VOID_VINES_PLANT = registerBlock("void_vines_plant",
+            new VoidVinesBodyBlock(
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.CYAN)
+                            .noCollision()
+                            .luminance(VoidVines.getLuminanceSupplier(14))
                             .breakInstantly()
                             .sounds(BlockSoundGroup.WET_GRASS)
                             .pistonBehavior(PistonBehavior.DESTROY)

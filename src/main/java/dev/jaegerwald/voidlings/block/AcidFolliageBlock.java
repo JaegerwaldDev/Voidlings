@@ -12,6 +12,6 @@ public class AcidFolliageBlock extends SproutsBlock {
 
     @Override
     protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
-        return floor.isOf(ModBlocks.BLACK_ACID) || floor.isOf(ModBlocks.ACID_MILDEW) || super.canPlantOnTop(floor, world, pos);
+        return floor.isOf(ModBlocks.BLACK_ACID) || floor.isOf(ModBlocks.ACID_MILDEW) || floor.isOf(ModBlocks.LIQUID_ACID) || super.canPlantOnTop(floor, world, pos);
     }
 }

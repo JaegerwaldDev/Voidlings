@@ -4,6 +4,7 @@ import dev.jaegerwald.voidlings.item.ModItemGroups;
 import dev.jaegerwald.voidlings.item.ModItems;
 import dev.jaegerwald.voidlings.block.ModBlocks;
 import dev.jaegerwald.voidlings.particle.Particles;
+import dev.jaegerwald.voidlings.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -28,6 +29,8 @@ public class Voidlings implements ModInitializer {
 		Particles.register();
 
 		ModItemGroups.registerItemGroups();
+
+		ModSounds.registerSounds();
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();

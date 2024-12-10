@@ -10,6 +10,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.ConstantIntProvider;
 
 public class ModBlocks {
     public static final Block BLACK_ACID = registerBlock("black_acid",
@@ -31,7 +32,7 @@ public class ModBlocks {
                             .sounds(BlockSoundGroup.WET_GRASS)
                             .offset(AbstractBlock.OffsetType.XZ)
                             .pistonBehavior(PistonBehavior.DESTROY)
-                            .luminance(state -> 14)
+                            .luminance(state -> 8)
             )
     );
 
@@ -94,9 +95,8 @@ public class ModBlocks {
             new VoidVinesHeadBlock(
                     AbstractBlock.Settings.create()
                             .mapColor(MapColor.CYAN)
-                            .ticksRandomly()
                             .noCollision()
-                            .luminance(VoidVines.getLuminanceSupplier(14))
+                            .luminance(VoidVines.getLuminanceSupplier(8))
                             .breakInstantly()
                             .sounds(BlockSoundGroup.WET_GRASS)
                             .pistonBehavior(PistonBehavior.DESTROY)
@@ -107,10 +107,34 @@ public class ModBlocks {
                     AbstractBlock.Settings.create()
                             .mapColor(MapColor.CYAN)
                             .noCollision()
-                            .luminance(VoidVines.getLuminanceSupplier(14))
+                            .luminance(VoidVines.getLuminanceSupplier(8))
                             .breakInstantly()
                             .sounds(BlockSoundGroup.WET_GRASS)
                             .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block VOID_BLOOM = registerBlock("void_bloom",
+            new LilyPadBlock(
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.CYAN)
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.WET_GRASS)
+                            .nonOpaque()
+                            .noCollision()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block ACID_ENCASED_MURIA = registerBlock("acid_encased_muria",
+            new ExperienceDroppingBlock(
+                    ConstantIntProvider.create(0),
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.DARK_AQUA)
+                            .instrument(NoteBlockInstrument.BASS)
+                            .strength(3.0F, 2.0F)
+                            .sounds(BlockSoundGroup.WET_GRASS)
+                            .requiresTool()
             )
     );
 

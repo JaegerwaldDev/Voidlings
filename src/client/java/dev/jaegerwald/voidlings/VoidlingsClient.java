@@ -8,6 +8,7 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.DimensionRenderingRegistry;
+import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -17,16 +18,21 @@ public class VoidlingsClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 		// This entrypoint is suitable for setting up client-specific logic, such as rendering.
-		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ACID_SPROUTS, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.VOID_TANGLE, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.VOID_TANGLE_PLANT, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.VOID_VINES, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.VOID_VINES_PLANT, RenderLayer.getCutout());
+		registerBlockCutout(ModBlocks.ACID_SPROUTS);
+		registerBlockCutout(ModBlocks.VOID_TANGLE);
+		registerBlockCutout(ModBlocks.VOID_TANGLE_PLANT);
+		registerBlockCutout(ModBlocks.VOID_VINES);
+		registerBlockCutout(ModBlocks.VOID_VINES_PLANT);
+		registerBlockCutout(ModBlocks.VOID_BLOOM);
 
 		registerParticlesBcSplitSourcesBS();
 
 		DimensionRenderingRegistry.registerDimensionEffects(Identifier.of(Voidlings.MOD_ID, "hollow"), new HollowDimensionEffects());
 		DimensionRenderingRegistry.registerCloudRenderer(RegistryKey.of(RegistryKeys.WORLD, Identifier.of(Voidlings.MOD_ID, "hollow")), new HollowDimensionEffects.CloudRenderer());
+	}
+
+	private void registerBlockCutout(Block block) {
+		BlockRenderLayerMap.INSTANCE.putBlock(block, RenderLayer.getCutout());
 	}
 
 	private static void registerParticlesBcSplitSourcesBS() {

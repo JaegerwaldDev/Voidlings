@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "voidlings:block/acid_encased_muria_top",
+    "side": "voidlings:block/acid_encased_muria"
+  }
+}

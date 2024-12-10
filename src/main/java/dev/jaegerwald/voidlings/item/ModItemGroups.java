@@ -14,7 +14,7 @@ public class ModItemGroups {
     public static final ItemGroup VOIDLINGS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(Voidlings.MOD_ID, "voidlings"),
             FabricItemGroup.builder()
-                    .icon(() -> new ItemStack(ModItems.ACID_SPROUTS))
+                    .icon(() -> new ItemStack(ModItems.VOID_LAMINA))
                     .displayName(Text.translatable("itemgroup.voidlings.items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.VOID_LAMINA);
@@ -24,10 +24,13 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.ACID_MILDEW);
                         entries.add(ModBlocks.ACID_MILDEW_CARPET);
-
                         entries.add(ModBlocks.VOID_TANGLE);
 
                         entries.add(ModBlocks.LIQUID_ACID);
+                        entries.add(ModItems.VOID_BLOOM);
+
+                        entries.add(ModBlocks.ACID_ENCASED_MURIA);
+                        entries.add(ModItems.RAW_MURIA);
                     }).build());
 
     public static void registerItemGroups() {

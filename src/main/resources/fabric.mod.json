@@ -35,7 +35,7 @@
 		"minecraft": "~1.21",
 		"java": ">=21",
 		"fabric-api": "*",
-		"origins": "*",
+		"origins": "1.13.0-alpha.8",
 		"stellum": ">=0.1.0"
 	},
 	"suggests": {

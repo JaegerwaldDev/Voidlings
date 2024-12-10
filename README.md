@@ -24,5 +24,7 @@ Mod that adds an origin, a dimension, weapons, items, decoration, etc.
 - [ ] Miscellaneous
   - [ ] Advancements
   - [ ] Decoration Blocks
+  - [ ] Plushies
+  - [ ] Paintings
   
   ...

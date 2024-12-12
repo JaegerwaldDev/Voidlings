@@ -17,7 +17,7 @@ Mod that adds an origin, a dimension, weapons, items, decoration, etc.
   - [ ] Items
   - [ ] GUI
 - [ ] Weapons/Tools
-  - [ ] Ancient Mask
+  - [X] Fennec Mask (temporary texture)
   - [ ] Trickster's Boots
   
   ...

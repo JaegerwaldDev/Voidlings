@@ -6,7 +6,8 @@
 	"description": "Adds the Voidling origin, plus extra content and weapons.",
 	"authors": [
 		"Jaegerwald",
-		"Proto_narrator"
+		"Proto_narrator",
+		"DawnKiro"
 	],
 	"contact": {
 		"homepage": "https://jaegerwalddev.github.io/",
@@ -31,10 +32,10 @@
 		}
 	],
 	"depends": {
-		"fabricloader": ">=0.16.9",
-		"minecraft": "~1.21",
+		"fabricloader": ">=${loader_version}",
+		"minecraft": "~${minecraft_version}",
 		"java": ">=21",
-		"fabric-api": "*",
+		"fabric-api": "${fabric_version}",
 		"origins": "1.13.0-alpha.8",
 		"stellum": ">=0.1.0"
 	},

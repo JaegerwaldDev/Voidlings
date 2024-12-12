@@ -18,6 +18,7 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.voidlings.items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.VOID_LAMINA);
+                        entries.add(ModItems.FRIED_LAMINA);
 
                         entries.add(ModBlocks.BLACK_ACID);
                         entries.add(ModBlocks.ACID_SPROUTS);

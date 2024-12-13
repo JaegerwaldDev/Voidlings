@@ -123,7 +123,8 @@ public class ModBlocks {
                             .nonOpaque()
                             .noCollision()
                             .pistonBehavior(PistonBehavior.DESTROY)
-            )
+            ),
+            false
     );
 
     public static final Block ACID_ENCASED_MURIA = registerBlock("acid_encased_muria",
@@ -139,7 +140,11 @@ public class ModBlocks {
     );
 
     private static Block registerBlock(String name, Block block) {
-        registerBlockItem(name, block);
+        return registerBlock(name, block, true);
+    }
+
+    private static Block registerBlock(String name, Block block, boolean registerItem) {
+        if (registerItem) registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(Voidlings.MOD_ID, name), block);
     }
 

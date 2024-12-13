@@ -1,4 +1,4 @@
-package dev.jaegerwald.voidlings.mixin.client;
+package dev.jaegerwald.voidlings.mixin;
 
 import com.llamalad7.mixinextras.sugar.Local;
 import dev.jaegerwald.voidlings.rendering.DarkeningDimensionEffects;

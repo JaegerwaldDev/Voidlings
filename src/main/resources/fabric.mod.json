@@ -25,11 +25,7 @@
 		]
 	},
 	"mixins": [
-		"voidlings.mixins.json",
-		{
-			"config": "voidlings.client.mixins.json",
-			"environment": "client"
-		}
+		"voidlings.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=${loader_version}",

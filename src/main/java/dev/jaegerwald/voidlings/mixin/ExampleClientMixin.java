@@ -1,4 +1,4 @@
-package dev.jaegerwald.voidlings.mixin.client;
+package dev.jaegerwald.voidlings.mixin;
 
 import net.minecraft.client.MinecraftClient;
 import org.spongepowered.asm.mixin.Mixin;

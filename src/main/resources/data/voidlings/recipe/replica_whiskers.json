@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "string"
+        },
+        {
+            "item": "string"
+        }
+    ],
+    "result": {
+        "id": "voidlings:replica_whiskers",
+        "count": 1
+    }
+}

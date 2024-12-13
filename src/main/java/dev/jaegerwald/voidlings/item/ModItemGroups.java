@@ -32,8 +32,12 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.ACID_ENCASED_MURIA);
                         entries.add(ModItems.RAW_MURIA);
+                        entries.add(ModItems.MURIA_PLATE);
+                        entries.add(ModItems.MURIA_RING);
+                        entries.add(ModItems.PROCESSED_MURIA_PLATE);
 
                         entries.add(ModItems.FENNEC_MASK);
+                        entries.add(ModItems.REPLICA_WHISKERS);
                     }).build());
 
     public static void registerItemGroups() {

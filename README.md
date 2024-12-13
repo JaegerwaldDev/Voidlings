@@ -4,12 +4,12 @@ Mod that adds an origin, a dimension, weapons, items, decoration, etc.
 ## Checklist
 - [ ] The Hollow
   - [ ] Blocks/Items
-    - [X] Overwater Blocks
+    - [x] Overwater Blocks
     - [ ] Underwater Blocks
   - [ ] Worldgen
   - [ ] Entities
 - [ ] Origin
-  - [ ] Eat Void Lamina
+  - [x] Eat Void Lamina
   - [x] Movement Abilities from V1
   - [ ] Different Stages
 - [ ] Translation
@@ -17,8 +17,8 @@ Mod that adds an origin, a dimension, weapons, items, decoration, etc.
   - [ ] Items
   - [ ] GUI
 - [ ] Weapons/Tools
-  - [X] Fennec Mask (temporary texture)
-  - [ ] Trickster's Boots
+  - [x] Fennec Mask (temporary texture)
+  - [ ] Rest of Fennec Equipment Stuff
   
   ...
 - [ ] Miscellaneous

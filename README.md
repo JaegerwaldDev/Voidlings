@@ -1,6 +1,9 @@
 # Voidlings
 Mod that adds an origin, a dimension, weapons, items, decoration, etc.
 
+>[!IMPORTANT]
+> Don't put Farmer's Delight in the Dev Environment
+
 ## Checklist
 - [ ] The Hollow
   - [ ] Blocks/Items

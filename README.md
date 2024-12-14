@@ -20,7 +20,7 @@ Mod that adds an origin, a dimension, weapons, items, decoration, etc.
   - [ ] Items
   - [ ] GUI
 - [ ] Weapons/Tools
-  - [x] Fennec Mask (temporary texture)
+  - [x] Fennec Mask
   - [ ] Rest of Fennec Equipment Stuff
   
   ...

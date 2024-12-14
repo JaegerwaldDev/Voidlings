@@ -36,6 +36,7 @@ public class ModItems {
     public static final Item MURIA_PLATE = registerItem("muria_plate", new Item(new Item.Settings()));
     public static final Item MURIA_RING = registerItem("muria_ring", new Item(new Item.Settings()));
     public static final Item PROCESSED_MURIA_PLATE = registerItem("processed_muria_plate", new Item(new Item.Settings()));
+    public static final Item MURIA_SHELL = registerItem("muria_shell", new Item(new Item.Settings()));
 
     public static final Item FENNEC_MASK = registerItem("fennec_mask", new FennecMaskItem(new Item.Settings()));
     public static final Item REPLICA_WHISKERS = registerItem("replica_whiskers", new Item(new Item.Settings()));

@@ -7,6 +7,7 @@ import dev.jaegerwald.voidlings.particle.Particles;
 import dev.jaegerwald.voidlings.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,8 +24,6 @@ public class Voidlings implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-
-		LOGGER.info("smoke weed everyday");
 
 		Particles.register();
 

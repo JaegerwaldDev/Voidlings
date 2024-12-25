@@ -23,10 +23,12 @@ public class ModItems {
 
     // public static final Item LIQUID_ACID = registerItem("liquid_acid", new Item(new Item.Settings()));
 
+    public static final Item BLACK_ACID_CHUNK = registerItem("black_acid_chunk", new Item(new Item.Settings()));
+
     public static final Item VOID_LAMINA = registerItem("void_lamina", new AliasedBlockItem(ModBlocks.VOID_VINES, new Item.Settings()));
     public static final Item FRIED_LAMINA = registerItem("fried_lamina",
             new Item(
-                    new Item.Settings().food(new FoodComponent.Builder().nutrition(5).saturationModifier(1.0F).build())
+                    new Item.Settings().food(new FoodComponent.Builder().nutrition(5).saturationModifier(2.0F).build())
             )
     );
 
@@ -37,9 +39,14 @@ public class ModItems {
     public static final Item MURIA_RING = registerItem("muria_ring", new Item(new Item.Settings()));
     public static final Item PROCESSED_MURIA_PLATE = registerItem("processed_muria_plate", new Item(new Item.Settings()));
     public static final Item MURIA_SHELL = registerItem("muria_shell", new Item(new Item.Settings()));
+    public static final Item MURIA_ROD = registerItem("muria_rod", new Item(new Item.Settings()));
+    public static final Item FRAMED_CLOTH = registerItem("framed_cloth", new Item(new Item.Settings()));
 
     public static final Item FENNEC_MASK = registerItem("fennec_mask", new FennecMaskItem(new Item.Settings()));
     public static final Item REPLICA_WHISKERS = registerItem("replica_whiskers", new Item(new Item.Settings()));
+
+    public static final Item PIERCED_MURIA_HANDLE = registerItem("pierced_muria_handle", new Item(new Item.Settings()));
+    public static final Item SURGEONS_BLADE = registerItem("surgeons_blade", new SwordItem(ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 6, -4.0F))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Voidlings.MOD_ID, name), item);

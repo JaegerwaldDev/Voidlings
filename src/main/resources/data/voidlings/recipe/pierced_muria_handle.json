@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "-o-",
+        " / "
+    ],
+    "key": {
+        "#": {
+            "item": "voidlings:black_acid_chunk"
+        },
+        "o": {
+            "item": "voidlings:muria_ring"
+        },
+        "-": {
+            "item": "voidlings:muria_plate"
+        },
+        "/": {
+            "item": "voidlings:muria_rod"
+        }
+    },
+    "result": {
+        "id": "voidlings:pierced_muria_handle",
+        "count": 1
+    }
+}

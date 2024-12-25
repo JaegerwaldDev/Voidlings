@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " / ",
+        "/#/",
+        " / "
+    ],
+    "key": {
+        "#": {
+            "tag": "minecraft:wool_carpets"
+        },
+        "/": {
+            "item": "voidlings:muria_rod"
+        }
+    },
+    "result": {
+        "id": "voidlings:framed_cloth",
+        "count": 1
+    }
+}

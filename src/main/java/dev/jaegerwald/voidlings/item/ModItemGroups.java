@@ -21,6 +21,7 @@ public class ModItemGroups {
                         entries.add(ModItems.FRIED_LAMINA);
 
                         entries.add(ModBlocks.BLACK_ACID);
+                        entries.add(ModItems.BLACK_ACID_CHUNK);
                         entries.add(ModBlocks.ACID_SPROUTS);
 
                         entries.add(ModBlocks.ACID_MILDEW);
@@ -36,9 +37,14 @@ public class ModItemGroups {
                         entries.add(ModItems.MURIA_RING);
                         entries.add(ModItems.PROCESSED_MURIA_PLATE);
                         entries.add(ModItems.MURIA_SHELL);
+                        entries.add(ModItems.MURIA_ROD);
+                        entries.add(ModItems.FRAMED_CLOTH);
 
                         entries.add(ModItems.FENNEC_MASK);
                         entries.add(ModItems.REPLICA_WHISKERS);
+
+                        entries.add(ModItems.SURGEONS_BLADE);
+                        entries.add(ModItems.PIERCED_MURIA_HANDLE);
                     }).build());
 
     public static void registerItemGroups() {

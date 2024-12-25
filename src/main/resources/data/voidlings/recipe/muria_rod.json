@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "voidlings:raw_muria"
+    },
+    "result": {
+        "id": "voidlings:muria_rod",
+        "count": 1
+    }
+}

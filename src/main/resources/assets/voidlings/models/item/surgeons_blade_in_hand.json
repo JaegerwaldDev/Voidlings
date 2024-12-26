@@ -1,20 +1,6 @@
 {
-  "parent": "minecraft:item/handheld",
+  "parent": "voidlings:item/handheld_large",
   "textures": {
     "layer0": "voidlings:item/surgeons_blade_model"
-  },
-  "display": {
-    "thirdperson_righthand": {
-      "scale": [ 2, 2, 1 ]
-    },
-    "thirdperson_lefthand": {
-      "scale": [ 2, 2, 1 ]
-    },
-    "firstperson_righthand": {
-      "scale": [ 2, 2, 1 ]
-    },
-    "firstperson_lefthand": {
-      "scale": [ 2, 2, 1 ]
-    }
   }
 }

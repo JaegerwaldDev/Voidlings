@@ -21,7 +21,7 @@ public class Renderers {
     public static void register() {
         RENDERERS.put(ModItems.SURGEONS_BLADE, Map.of((stack, modelTransformationMode) -> {
             return modelTransformationMode != ModelTransformationMode.GUI; // The condition to apply the model
-        }, forceLoad("fried_lamina")));
+        }, forceLoad("surgeons_blade_in_hand")));
     }
 
     public static void apply(ItemStack stack, ModelTransformationMode mode, Consumer<ModelIdentifier> consumer) {

@@ -3,14 +3,16 @@
   "package": "dev.jaegerwald.voidlings.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "ExampleMixin",
     "ExampleClientMixin",
+    "ExampleMixin",
     "LightmapTextureManagerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
   },
   "client": [
-    "LivingEntityRendererMixin"
+    "ItemRendererMixin",
+    "LivingEntityRendererMixin",
+    "ModelLoaderMixin"
   ]
 }

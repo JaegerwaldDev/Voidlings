@@ -53,5 +53,6 @@ public class ModItems {
     }
 
     public static void registerModItems() {
+        Renderers.register();
     }
 }

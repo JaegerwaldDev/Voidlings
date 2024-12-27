@@ -46,7 +46,12 @@ public class ModItems {
     public static final Item REPLICA_WHISKERS = registerItem("replica_whiskers", new Item(new Item.Settings()));
 
     public static final Item PIERCED_MURIA_HANDLE = registerItem("pierced_muria_handle", new Item(new Item.Settings()));
-    public static final Item SURGEONS_BLADE = registerItem("surgeons_blade", new SwordItem(ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 6, -2.0F))));
+    public static final Item SURGEONS_BLADE = registerItem("surgeons_blade", new SurgeonsBladeItem(ModToolMaterials.MURIA, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.MURIA, 6, -2.0F))));
+
+    public static final Item REPLACEMENT_HEART = registerItem("replacement_heart", new HeartItem(new Item.Settings().maxCount(1))); // debug item
+
+    public static final Item VOIDLING_HEART = registerItem("voidling_heart", new HeartItem(new Item.Settings().maxCount(1)));
+    public static final Item BROKEN_VOIDLING_HEART = registerItem("broken_voidling_heart", new Item(new Item.Settings().maxCount(16)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Voidlings.MOD_ID, name), item);

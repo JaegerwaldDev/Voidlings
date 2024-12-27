@@ -1,0 +1,21 @@
+{
+  "item.surgeons_blade.stab": {
+    "subtitle": "subtitles.voidlings.item.surgeons_blade.stab",
+    "sounds": [
+      "voidlings:item/surgeons_blade/stab"
+    ]
+  },
+  "item.surgeons_blade.voidling_breath": {
+    "subtitle": "subtitles.voidlings.item.surgeons_blade.voidling_breath",
+    "sounds": [
+      "voidlings:item/surgeons_blade/voidling_breath"
+    ]
+  },
+  "block.void_vines.pick_lamina": {
+    "subtitle": "subtitles.voidlings.block.void_vines.pick_lamina",
+    "sounds": [
+      "minecraft:item/sweet_berries/pick_from_bush1",
+      "minecraft:item/sweet_berries/pick_from_bush2"
+    ]
+  }
+}

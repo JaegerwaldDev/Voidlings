@@ -45,6 +45,9 @@ public class ModItemGroups {
 
                         entries.add(ModItems.SURGEONS_BLADE);
                         entries.add(ModItems.PIERCED_MURIA_HANDLE);
+
+                        entries.add(ModItems.VOIDLING_HEART);
+                        entries.add(ModItems.BROKEN_VOIDLING_HEART);
                     }).build());
 
     public static void registerItemGroups() {

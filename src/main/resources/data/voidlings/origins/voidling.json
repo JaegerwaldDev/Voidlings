@@ -1,10 +1,13 @@
 {
     "powers": [
-        "voidlings:light_hearted",
+        "voidlings:voidling/light_hearted",
         "voidlings:burn_in_daylight",
         "voidlings:vanish",
-        "voidlings:dash",
-        "voidlings:fall_immunity"
+        "voidlings:voidling/dash",
+        "voidlings:fall_immunity",
+
+        "voidlings:voidling/stabbable",
+        "voidlings:replacable_heart"
     ],
     "icon": {
         "id": "vex_armor_trim_smithing_template"

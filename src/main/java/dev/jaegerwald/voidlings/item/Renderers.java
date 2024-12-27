@@ -20,7 +20,7 @@ public class Renderers {
 
     public static void register() {
         RENDERERS.put(ModItems.SURGEONS_BLADE, Map.of((stack, modelTransformationMode) -> {
-            return modelTransformationMode != ModelTransformationMode.GUI; // The condition to apply the model
+            return modelTransformationMode != ModelTransformationMode.GUI && modelTransformationMode != ModelTransformationMode.GROUND && modelTransformationMode != ModelTransformationMode.FIXED; // The condition to apply the model
         }, forceLoad("surgeons_blade_in_hand")));
     }
 

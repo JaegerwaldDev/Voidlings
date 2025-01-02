@@ -1,6 +1,7 @@
 package dev.jaegerwald.voidlings.item;
 
 import com.google.common.base.Suppliers;
+import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
@@ -14,17 +15,17 @@ import java.util.Objects;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    MURIA(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3046, 9.0F, 4.0F, 20, () -> Ingredient.ofItems(new ItemConvertible[]{ModItems.RAW_MURIA}));
+    MURIA(MiningLevels.NETHERITE, 3046, 9.0F, 4.0F, 20, () -> Ingredient.ofItems(new ItemConvertible[]{ModItems.RAW_MURIA}));
 
-    private final TagKey<Block> inverseTag;
+    private final int miningLevel;
     private final int itemDurability;
     private final float miningSpeed;
     private final float attackDamage;
     private final int enchantability;
     private final Supplier<Ingredient> repairIngredient;
 
-    private ModToolMaterials(final TagKey<Block> inverseTag, final int itemDurability, final float miningSpeed, final float attackDamage, final int enchantability, final Supplier<Ingredient> repairIngredient) {
-        this.inverseTag = inverseTag;
+    private ModToolMaterials(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
+        this.miningLevel = miningLevel;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;
         this.attackDamage = attackDamage;
@@ -45,8 +46,8 @@ public enum ModToolMaterials implements ToolMaterial {
         return this.attackDamage;
     }
 
-    public TagKey<Block> getInverseTag() {
-        return this.inverseTag;
+    public int getMiningLevel() {
+        return this.miningLevel;
     }
 
     public int getEnchantability() {

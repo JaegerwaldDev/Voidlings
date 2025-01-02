@@ -8,8 +8,6 @@ import java.util.List;
 import net.minecraft.block.DispenserBlock;
 import net.minecraft.block.dispenser.DispenserBehavior;
 import net.minecraft.block.dispenser.ItemDispenserBehavior;
-import net.minecraft.component.type.AttributeModifierSlot;
-import net.minecraft.component.type.AttributeModifiersComponent;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
@@ -42,14 +40,14 @@ public class FennecMaskItem extends Item implements Equipment {
     };
 
     public static boolean dispenseArmor(BlockPointer pointer, ItemStack armor) {
-        BlockPos blockPos = pointer.pos().offset(pointer.state().get(DispenserBlock.FACING));
-        List<LivingEntity> list = pointer.world()
+        BlockPos blockPos = pointer.getPos().offset(pointer.getBlockState().get(DispenserBlock.FACING));
+        List<LivingEntity> list = pointer.getWorld()
                 .getEntitiesByClass(LivingEntity.class, new Box(blockPos), EntityPredicates.EXCEPT_SPECTATOR.and(new EntityPredicates.Equipable(armor)));
         if (list.isEmpty()) {
             return false;
         } else {
             LivingEntity livingEntity = (LivingEntity)list.get(0);
-            EquipmentSlot equipmentSlot = livingEntity.getPreferredEquipmentSlot(armor);
+            EquipmentSlot equipmentSlot = MobEntity.getPreferredEquipmentSlot(armor);
             ItemStack itemStack = armor.split(1);
             livingEntity.equipStack(equipmentSlot, itemStack);
             if (livingEntity instanceof MobEntity) {

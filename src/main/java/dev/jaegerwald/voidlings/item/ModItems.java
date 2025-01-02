@@ -4,8 +4,8 @@ import dev.jaegerwald.voidlings.Voidlings;
 import dev.jaegerwald.voidlings.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.Blocks;
-import net.minecraft.component.type.FoodComponent;
-import net.minecraft.component.type.FoodComponents;
+import net.minecraft.item.FoodComponent;
+import net.minecraft.item.FoodComponents;
 import net.minecraft.item.*;
 import dev.jaegerwald.voidlings.item.FennecMaskItem;
 import net.minecraft.registry.Registries;
@@ -28,7 +28,7 @@ public class ModItems {
     public static final Item VOID_LAMINA = registerItem("void_lamina", new AliasedBlockItem(ModBlocks.VOID_VINES, new Item.Settings()));
     public static final Item FRIED_LAMINA = registerItem("fried_lamina",
             new Item(
-                    new Item.Settings().food(new FoodComponent.Builder().nutrition(5).saturationModifier(2.0F).build())
+                    new Item.Settings().food(new FoodComponent.Builder().hunger(5).saturationModifier(2.0F).build())
             )
     );
 
@@ -46,7 +46,7 @@ public class ModItems {
     public static final Item REPLICA_WHISKERS = registerItem("replica_whiskers", new Item(new Item.Settings()));
 
     public static final Item PIERCED_MURIA_HANDLE = registerItem("pierced_muria_handle", new Item(new Item.Settings()));
-    public static final Item SURGEONS_BLADE = registerItem("surgeons_blade", new SurgeonsBladeItem(ModToolMaterials.MURIA, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.MURIA, 6, -2.0F))));
+    public static final Item SURGEONS_BLADE = registerItem("surgeons_blade", new SurgeonsBladeItem(ModToolMaterials.MURIA, 6, -2.0F, new Item.Settings()));
 
     public static final Item REPLACEMENT_HEART = registerItem("replacement_heart", new HeartItem(new Item.Settings().maxCount(1))); // debug item
 

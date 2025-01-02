@@ -9,21 +9,17 @@ import net.minecraft.item.Items;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
+import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 
 public class VoidVinesHeadBlock extends AbstractPlantStemBlock implements Fertilizable, VoidVines {
-    public static final MapCodec<VoidVinesHeadBlock> CODEC = createCodec(VoidVinesHeadBlock::new);
     private static final float GROW_CHANCE = 0.11F;
-
-    @Override
-    protected MapCodec<VoidVinesHeadBlock> getCodec() {
-        return CODEC;
-    }
 
     public VoidVinesHeadBlock(Settings settings) {
         super(settings, Direction.DOWN, SHAPE, false, 0.1);
@@ -56,12 +52,12 @@ public class VoidVinesHeadBlock extends AbstractPlantStemBlock implements Fertil
     }
 
     @Override
-    public ItemStack getPickStack(WorldView world, BlockPos pos, BlockState state) {
+    public ItemStack getPickStack(BlockView view, BlockPos pos, BlockState state) {
         return new ItemStack(ModItems.VOID_LAMINA);
     }
 
     @Override
-    protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
+    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         return VoidVines.pickLamina(player, state, world, pos);
     }
 
@@ -72,7 +68,7 @@ public class VoidVinesHeadBlock extends AbstractPlantStemBlock implements Fertil
     }
 
     @Override
-    public boolean isFertilizable(WorldView world, BlockPos pos, BlockState state) {
+    public boolean isFertilizable(WorldView world, BlockPos pos, BlockState state, boolean isClient) {
         return !(Boolean)state.get(LAMINA);
     }
 

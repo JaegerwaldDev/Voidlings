@@ -10,7 +10,7 @@
         "voidlings:replacable_heart"
     ],
     "icon": {
-        "id": "vex_armor_trim_smithing_template"
+        "item": "voidlings:black_acid_chunk"
     },
     "order": 4,
     "impact": 3,

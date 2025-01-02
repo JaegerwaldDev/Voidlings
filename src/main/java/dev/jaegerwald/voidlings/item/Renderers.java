@@ -38,6 +38,6 @@ public class Renderers {
     }
 
     private static ModelIdentifier modelID(String path) {
-        return ModelIdentifier.ofInventoryVariant(Identifier.of(Voidlings.MOD_ID, path));
+        return new ModelIdentifier(new Identifier(Voidlings.MOD_ID, path), "inventory");
     }
 }

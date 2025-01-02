@@ -2,7 +2,7 @@ package dev.jaegerwald.voidlings.block;
 
 import dev.jaegerwald.voidlings.Voidlings;
 import net.minecraft.block.*;
-import net.minecraft.block.enums.NoteBlockInstrument;
+import net.minecraft.block.enums.Instrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -17,7 +17,7 @@ public class ModBlocks {
             new Block(
                     AbstractBlock.Settings.create()
                             .mapColor(MapColor.DARK_AQUA)
-                            .instrument(NoteBlockInstrument.BASS)
+                            .instrument(Instrument.BASS)
                             .strength(3.0F, 2.0F)
                             .sounds(BlockSoundGroup.WET_GRASS)
             )
@@ -80,10 +80,10 @@ public class ModBlocks {
             new SoulSandBlock(
                     AbstractBlock.Settings.create()
                             .mapColor(MapColor.BLACK)
-                            .instrument(NoteBlockInstrument.COW_BELL)
+                            .instrument(Instrument.COW_BELL)
                             .strength(1.0F)
                             .velocityMultiplier(0.15F)
-                            .sounds(BlockSoundGroup.WET_SPONGE)
+                            .sounds(BlockSoundGroup.MUD)
                             .allowsSpawning(Blocks::always)
                             .solidBlock(Blocks::always)
                             .blockVision(Blocks::always)
@@ -129,13 +129,13 @@ public class ModBlocks {
 
     public static final Block ACID_ENCASED_MURIA = registerBlock("acid_encased_muria",
             new ExperienceDroppingBlock(
-                    ConstantIntProvider.create(0),
                     AbstractBlock.Settings.create()
-                            .mapColor(MapColor.DARK_AQUA)
-                            .instrument(NoteBlockInstrument.BASS)
-                            .strength(3.0F, 2.0F)
-                            .sounds(BlockSoundGroup.WET_GRASS)
-                            .requiresTool()
+                                        .mapColor(MapColor.DARK_AQUA)
+                                        .instrument(Instrument.BASS)
+                                        .strength(3.0F, 2.0F)
+                                        .sounds(BlockSoundGroup.WET_GRASS)
+                                        .requiresTool(),
+                    ConstantIntProvider.create(0)
             )
     );
 

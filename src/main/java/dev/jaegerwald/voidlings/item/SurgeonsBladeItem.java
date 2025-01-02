@@ -20,8 +20,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class SurgeonsBladeItem extends SwordItem {
-    public SurgeonsBladeItem(ToolMaterial toolMaterial, Settings settings) {
-        super(toolMaterial, settings);
+
+    public SurgeonsBladeItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
+        super(toolMaterial, attackDamage, attackSpeed, settings);
     }
 
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
@@ -37,7 +38,7 @@ public class SurgeonsBladeItem extends SwordItem {
             user.getItemCooldownManager().set(this, 100);
         }
 
-        itemStack.damage(5, user, EquipmentSlot.MAINHAND);
+        itemStack.damage(5, user, e -> e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
 
         user.damage(world.getDamageSources().playerAttack(user), 9.0F);
 

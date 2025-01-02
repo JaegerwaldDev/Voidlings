@@ -5,8 +5,8 @@
         "modifier": {
             "id": "*:*",
             "attribute": "minecraft:generic.max_health",
-            "amount": -10.0,
-            "operation": "add_value"
+            "value": -10.0,
+            "operation": "addition"
         }
     },
     "heart_texture": {

@@ -145,11 +145,11 @@ public class ModBlocks {
 
     private static Block registerBlock(String name, Block block, boolean registerItem) {
         if (registerItem) registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, Identifier.of(Voidlings.MOD_ID, name), block);
+        return Registry.register(Registries.BLOCK, Voidlings.id(name), block);
     }
 
     public static void registerBlockItem(String name, Block block) {
-        Registry.register(Registries.ITEM, Identifier.of(Voidlings.MOD_ID, name),
+        Registry.register(Registries.ITEM, Voidlings.id(name),
                 new BlockItem(block, new Item.Settings()));
     }
 

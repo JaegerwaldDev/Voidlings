@@ -54,7 +54,7 @@ public class ModItems {
     public static final Item BROKEN_VOIDLING_HEART = registerItem("broken_voidling_heart", new Item(new Item.Settings().maxCount(16)));
 
     private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, Identifier.of(Voidlings.MOD_ID, name), item);
+        return Registry.register(Registries.ITEM, Voidlings.id(name), item);
     }
 
     public static void registerModItems() {

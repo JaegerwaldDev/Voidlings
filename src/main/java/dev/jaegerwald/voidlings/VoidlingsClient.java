@@ -15,6 +15,8 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 public class VoidlingsClient implements ClientModInitializer {
+	private static final Identifier HOLLOW = Voidlings.id("hollow");
+
 	@Override
 	public void onInitializeClient() {
 		// This entrypoint is suitable for setting up client-specific logic, such as rendering.
@@ -27,8 +29,8 @@ public class VoidlingsClient implements ClientModInitializer {
 
 		registerParticlesBcSplitSourcesBS();
 
-		DimensionRenderingRegistry.registerDimensionEffects(Identifier.of(Voidlings.MOD_ID, "hollow"), new HollowDimensionEffects());
-		DimensionRenderingRegistry.registerCloudRenderer(RegistryKey.of(RegistryKeys.WORLD, Identifier.of(Voidlings.MOD_ID, "hollow")), new HollowDimensionEffects.CloudRenderer());
+		DimensionRenderingRegistry.registerDimensionEffects(HOLLOW, new HollowDimensionEffects());
+		DimensionRenderingRegistry.registerCloudRenderer(RegistryKey.of(RegistryKeys.WORLD, HOLLOW), new HollowDimensionEffects.CloudRenderer());
 	}
 
 	private void registerBlockCutout(Block block) {

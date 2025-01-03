@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
     public static final ItemGroup VOIDLINGS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(Voidlings.MOD_ID, "voidlings"),
+            Voidlings.id("voidlings"),
             FabricItemGroup.builder()
                     .icon(() -> new ItemStack(ModItems.VOID_LAMINA))
                     .displayName(Text.translatable("itemgroup.voidlings.items"))

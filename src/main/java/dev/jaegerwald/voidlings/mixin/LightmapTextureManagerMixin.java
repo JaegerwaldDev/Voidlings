@@ -1,5 +1,7 @@
 package dev.jaegerwald.voidlings.mixin;
 
+import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
+import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import com.llamalad7.mixinextras.sugar.Local;
 import dev.jaegerwald.voidlings.rendering.DarkeningDimensionEffects;
 import net.minecraft.client.render.LightmapTextureManager;
@@ -23,8 +25,8 @@ public class LightmapTextureManagerMixin {
         shouldDisableBaseAmbientLighting = clientWorld.getDimensionEffects() instanceof DarkeningDimensionEffects effects && effects.shouldDisableBaseAmbientLighting();
     }
 
-    @Redirect(method = "update", at = @At(value = "INVOKE", target = "Lorg/joml/Vector3f;lerp(Lorg/joml/Vector3fc;F)Lorg/joml/Vector3f;", ordinal = 6), remap = false)
-    private Vector3f darkenLighting(Vector3f instance, Vector3fc other, float t) {
-        return shouldDisableBaseAmbientLighting ? instance : instance.lerp(other, t);
+    @WrapOperation(method = "update", at = @At(value = "INVOKE", target = "Lorg/joml/Vector3f;lerp(Lorg/joml/Vector3fc;F)Lorg/joml/Vector3f;", ordinal = 6), remap = false)
+    private Vector3f darkenLighting(Vector3f instance, Vector3fc other, float t, Operation<Vector3f> original) {
+        return shouldDisableBaseAmbientLighting ? instance : original.call(instance, other, t);
     }
 }

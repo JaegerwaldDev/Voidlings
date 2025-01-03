@@ -12,7 +12,7 @@ public class ModSounds {
     public static final SoundEvent ITEM_SURGEONS_BLADE_STAB = registerSoundEvent("item.surgeons_blade.stab");
 
     private static SoundEvent registerSoundEvent(String name) {
-        Identifier id = Identifier.of(Voidlings.MOD_ID, name);
+        Identifier id = Voidlings.id(name);
         return Registry.register(Registries.SOUND_EVENT, id, SoundEvent.of(id));
     }
 

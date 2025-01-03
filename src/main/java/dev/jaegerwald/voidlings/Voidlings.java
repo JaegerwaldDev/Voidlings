@@ -34,4 +34,8 @@ public class Voidlings implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 	}
+
+	public static Identifier id(String name) {
+		return Identifier.of(MOD_ID, name);
+	}
 }

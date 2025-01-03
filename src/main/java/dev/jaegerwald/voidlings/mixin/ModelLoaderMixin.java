@@ -18,9 +18,6 @@ import java.util.Map;
 
 @Mixin(ModelLoader.class)
 public abstract class ModelLoaderMixin {
-
-    // mixins :3
-
     // @Shadow protected abstract void loadItemModel(ModelIdentifier id);
 
     // @Inject(method = "<init>", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/render/model/ModelLoader;loadItemModel(Lnet/minecraft/client/util/ModelIdentifier;)V", ordinal = 0))

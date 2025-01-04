@@ -4,23 +4,8 @@
     "hidden": true,
 
     "entity_action": {
-        "type": "origins:and",
-        "actions": [
-            {
-                "type": "origins:play_sound",
-                "sound": "voidlings:item.surgeons_blade.voidling_breath",
-                "volume": 0.75,
-                "pitch": 1
-            },
-            {
-                "type": "origins:execute_command",
-                "command": "function voidlings:stabbed"
-            },
-            {
-                "type": "origins:execute_command",
-                "command": "execute unless entity @s[tag=voidlings.stabbed] run give @s voidlings:broken_voidling_heart 1"
-            }
-        ]
+        "type": "origins:execute_command",
+        "command": "function voidlings:stabbed"
     },
 
     "item_condition": {

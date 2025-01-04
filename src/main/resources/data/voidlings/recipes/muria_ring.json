@@ -3,8 +3,6 @@
     "ingredient": {
         "item": "voidlings:raw_muria"
     },
-    "result": {
-        "id": "voidlings:muria_ring",
-        "count": 1
-    }
+    "result": "voidlings:muria_ring",
+    "count": 1
 }

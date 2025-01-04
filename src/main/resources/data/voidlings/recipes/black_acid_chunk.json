@@ -3,8 +3,6 @@
     "ingredient": {
         "item": "voidlings:black_acid"
     },
-    "result": {
-        "id": "voidlings:black_acid_chunk",
-        "count": 4
-    }
+    "result": "voidlings:black_acid_chunk",
+    "count": 4
 }

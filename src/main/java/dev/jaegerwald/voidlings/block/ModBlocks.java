@@ -73,7 +73,8 @@ public class ModBlocks {
                             .breakInstantly()
                             .sounds(BlockSoundGroup.WET_GRASS)
                             .pistonBehavior(PistonBehavior.DESTROY)
-            )
+            ),
+            false
     );
 
     public static final Block LIQUID_ACID = registerBlock("liquid_acid",
@@ -100,7 +101,8 @@ public class ModBlocks {
                             .breakInstantly()
                             .sounds(BlockSoundGroup.WET_GRASS)
                             .pistonBehavior(PistonBehavior.DESTROY)
-            )
+            ),
+            false
     );
     public static final Block VOID_VINES_PLANT = registerBlock("void_vines_plant",
             new VoidVinesBodyBlock(
@@ -111,7 +113,8 @@ public class ModBlocks {
                             .breakInstantly()
                             .sounds(BlockSoundGroup.WET_GRASS)
                             .pistonBehavior(PistonBehavior.DESTROY)
-            )
+            ),
+            false
     );
 
     public static final Block VOID_BLOOM = registerBlock("void_bloom",

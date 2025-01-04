@@ -6,7 +6,5 @@
   "ingredient": {
     "item": "voidlings:void_lamina"
   },
-  "result": {
-    "id": "voidlings:fried_lamina"
-  }
+  "result": "voidlings:fried_lamina"
 }

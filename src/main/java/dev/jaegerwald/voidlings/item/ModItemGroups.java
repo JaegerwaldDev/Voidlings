@@ -15,7 +15,7 @@ public class ModItemGroups {
             Voidlings.id("voidlings"),
             FabricItemGroup.builder()
                     .icon(() -> new ItemStack(ModItems.VOID_LAMINA))
-                    .displayName(Text.translatable("itemgroup.voidlings.items"))
+                    .displayName(Text.translatable("itemgroup.voidlings"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.VOID_LAMINA);
                         entries.add(ModItems.FRIED_LAMINA);

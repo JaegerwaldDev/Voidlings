@@ -29,7 +29,7 @@ public class SurgeonsBladeItem extends SwordItem {
         ItemStack itemStack = user.getStackInHand(hand);
         user.incrementStat(Stats.USED.getOrCreateStat(this));
 
-        world.playSound((PlayerEntity)null, user.getX(), user.getY(), user.getZ(), ModSounds.ITEM_SURGEONS_BLADE_STAB, SoundCategory.PLAYERS, 0.75F, 1.0F);
+        world.playSound(user, user.getX(), user.getY(), user.getZ(), ModSounds.ITEM_SURGEONS_BLADE_STAB, SoundCategory.PLAYERS, 0.75F, 1.0F);
 
         // mainly like this for testing purposes
         if (!user.isCreative()) {

@@ -18,8 +18,11 @@ import java.util.Map;
 
 @Mixin(ModelLoader.class)
 public abstract class ModelLoaderMixin {
-    // @Shadow protected abstract void loadItemModel(ModelIdentifier id);
+    @Shadow
+    protected abstract void addModel(ModelIdentifier modelId);
 
-    // @Inject(method = "<init>", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/render/model/ModelLoader;loadItemModel(Lnet/minecraft/client/util/ModelIdentifier;)V", ordinal = 0))
-    // private void loadForcedModels() {Renderers.FORCELOAD.forEach(this::loadItemModel);}
+    @Inject(method = "<init>", at = @At(value = "INVOKE", target = "Lnet/minecraft/util/profiler/Profiler;swap(Ljava/lang/String;)V", ordinal = 3))
+    private void loadForcedModels(BlockColors blockColors, Profiler profiler, Map<Identifier, JsonUnbakedModel> jsonUnbakedModels, Map<Identifier, List<ModelLoader.SourceTrackedData>> blockStates, CallbackInfo ci) {
+        Renderers.FORCELOAD.forEach(this::addModel);
+    }
 }

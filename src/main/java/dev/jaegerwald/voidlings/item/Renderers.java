@@ -5,7 +5,6 @@ import net.minecraft.client.render.model.json.ModelTransformationMode;
 import net.minecraft.client.util.ModelIdentifier;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.Identifier;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -22,6 +21,7 @@ public class Renderers {
         RENDERERS.put(ModItems.SURGEONS_BLADE, Map.of((stack, modelTransformationMode) -> {
             return modelTransformationMode != ModelTransformationMode.GUI && modelTransformationMode != ModelTransformationMode.GROUND && modelTransformationMode != ModelTransformationMode.FIXED; // The condition to apply the model
         }, forceLoad("surgeons_blade_in_hand")));
+
     }
 
     public static void apply(ItemStack stack, ModelTransformationMode mode, Consumer<ModelIdentifier> consumer) {
@@ -38,6 +38,6 @@ public class Renderers {
     }
 
     private static ModelIdentifier modelID(String path) {
-        return new ModelIdentifier(new Identifier(Voidlings.MOD_ID, path), "inventory");
+        return new ModelIdentifier(Voidlings.MOD_ID, path, "inventory");
     }
 }

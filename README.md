@@ -29,7 +29,7 @@ Mod that adds an origin, a dimension, weapons, items, decoration, etc.
   ...
 - [ ] Miscellaneous
   - [ ] Advancements
-  - [ ] Decoration Blocks
+  - [X] Decoration Blocks (most are added, but ill still have to find out what i need while building)
   - [ ] Plushies
   - [ ] Paintings
   

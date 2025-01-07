@@ -12,6 +12,9 @@ Mod that adds an origin, a dimension, weapons, items, decoration, etc.
     - [ ] Hearts
   - [ ] Worldgen
   - [ ] Entities
+    - [ ] Giant Fish Thingie (to be named)
+    - [ ] Small Fishie (to be named)
+    - [ ] Axolotl-like thingie (to be named)
 - [ ] Origin
   - [x] Eat Void Lamina
   - [x] Movement Abilities from V1

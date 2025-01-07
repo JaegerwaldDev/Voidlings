@@ -1,0 +1,18 @@
+{
+    "type": "origins:multiple",
+    "health_decrease": {
+        "type": "origins:attribute",
+        "modifier": {
+            "id": "*:*",
+            "attribute": "minecraft:generic.max_health",
+            "value": -5.0,
+            "operation": "addition"
+        }
+    },
+    "heart_texture": {
+        "type": "origins:status_bar_texture",
+        "texture": "voidlings:textures/gui/icons2.png"
+    },
+    "name": "Tuff-Hearted",
+    "description": "While not a signifcant improvement - you have 2½ more hearts than a normal Voidling."
+}

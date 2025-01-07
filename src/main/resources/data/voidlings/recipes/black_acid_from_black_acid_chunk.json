@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "voidlings:black_acid_chunk"
+    }
+  },
+  "result": {
+    "item": "voidlings:black_acid",
+    "count": 1
+  }
+}

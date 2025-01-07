@@ -31,6 +31,11 @@ public class ModItemGroups {
                         entries.add(ModBlocks.LIQUID_ACID);
                         entries.add(ModItems.VOID_BLOOM);
 
+                        entries.add(ModBlocks.BLACK_ACID_BRICKS);
+                        entries.add(ModBlocks.BLACK_ACID_BRICK_STAIRS);
+                        entries.add(ModBlocks.BLACK_ACID_BRICK_SLAB);
+                        entries.add(ModBlocks.BLACK_ACID_BRICK_WALL);
+
                         entries.add(ModBlocks.ACID_ENCASED_MURIA);
                         entries.add(ModItems.RAW_MURIA);
                         entries.add(ModItems.MURIA_PLATE);

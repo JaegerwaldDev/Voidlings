@@ -58,7 +58,7 @@ public class ModBlocks {
     public static final Block VOID_TANGLE = registerBlock("void_tangle",
             new VoidTangleBlock(
                     AbstractBlock.Settings.create()
-                            .mapColor(MapColor.CYAN)
+                            .mapColor(MapColor.BLACK)
                             .noCollision()
                             .breakInstantly()
                             .sounds(BlockSoundGroup.WET_GRASS)
@@ -68,7 +68,7 @@ public class ModBlocks {
     public static final Block VOID_TANGLE_PLANT = registerBlock("void_tangle_plant",
             new VoidTanglePlantBlock(
                     AbstractBlock.Settings.create()
-                            .mapColor(MapColor.CYAN)
+                            .mapColor(MapColor.BLACK)
                             .noCollision()
                             .breakInstantly()
                             .sounds(BlockSoundGroup.WET_GRASS)
@@ -95,7 +95,7 @@ public class ModBlocks {
     public static final Block VOID_VINES = registerBlock("void_vines",
             new VoidVinesHeadBlock(
                     AbstractBlock.Settings.create()
-                            .mapColor(MapColor.CYAN)
+                            .mapColor(MapColor.BLACK)
                             .noCollision()
                             .luminance(VoidVines.getLuminanceSupplier(8))
                             .breakInstantly()
@@ -107,7 +107,7 @@ public class ModBlocks {
     public static final Block VOID_VINES_PLANT = registerBlock("void_vines_plant",
             new VoidVinesBodyBlock(
                     AbstractBlock.Settings.create()
-                            .mapColor(MapColor.CYAN)
+                            .mapColor(MapColor.BLACK)
                             .noCollision()
                             .luminance(VoidVines.getLuminanceSupplier(8))
                             .breakInstantly()
@@ -120,7 +120,7 @@ public class ModBlocks {
     public static final Block VOID_BLOOM = registerBlock("void_bloom",
             new LilyPadBlock(
                     AbstractBlock.Settings.create()
-                            .mapColor(MapColor.CYAN)
+                            .mapColor(MapColor.DARK_AQUA)
                             .breakInstantly()
                             .sounds(BlockSoundGroup.WET_GRASS)
                             .nonOpaque()
@@ -130,14 +130,34 @@ public class ModBlocks {
             false
     );
 
+    public static final Block BLACK_ACID_BRICKS = registerBlock("black_acid_bricks", 
+            new Block(
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.BLACK)
+                            .sounds(BlockSoundGroup.MUD_BRICKS)
+                            .strength(2.0F, 2.0F)
+                            .instrument(Instrument.BASEDRUM)
+                            .requiresTool()
+            )
+    );
+    public static final Block BLACK_ACID_BRICK_STAIRS = registerBlock("black_acid_brick_stairs",
+            new StairsBlock(BLACK_ACID_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(BLACK_ACID_BRICKS))
+    );
+    public static final Block BLACK_ACID_BRICK_SLAB = registerBlock("black_acid_brick_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(BLACK_ACID_BRICKS))
+    );
+    public static final Block BLACK_ACID_BRICK_WALL = registerBlock("black_acid_brick_wall",
+            new WallBlock(AbstractBlock.Settings.copy(BLACK_ACID_BRICKS).solid())
+    );
+    
     public static final Block ACID_ENCASED_MURIA = registerBlock("acid_encased_muria",
             new ExperienceDroppingBlock(
                     AbstractBlock.Settings.create()
-                                        .mapColor(MapColor.DARK_AQUA)
-                                        .instrument(Instrument.BASS)
-                                        .strength(3.0F, 2.0F)
-                                        .sounds(BlockSoundGroup.WET_GRASS)
-                                        .requiresTool(),
+                            .mapColor(MapColor.BLACK)
+                            .instrument(Instrument.BASS)
+                            .strength(3.0F, 2.0F)
+                            .sounds(BlockSoundGroup.WET_GRASS)
+                            .requiresTool(),
                     ConstantIntProvider.create(0)
             )
     );

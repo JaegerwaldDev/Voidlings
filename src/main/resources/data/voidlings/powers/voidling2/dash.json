@@ -1,0 +1,27 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.phantom.flap",
+                "volume": 1.5,
+                "pitch": 2
+            },
+            {
+                "type": "origins:add_velocity",
+                "z": 3,
+                "space": "local"
+            },
+            {
+                "type": "origins:add_velocity",
+                "y": 0.5,
+                "space": "world"
+            }
+        ]
+    },
+    "cooldown": 25,
+    "name": "Dash II",
+    "description": "Travel in the air with an extra boost."
+}

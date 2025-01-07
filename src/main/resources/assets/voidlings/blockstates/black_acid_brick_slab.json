@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "voidlings:block/black_acid_brick_slab"
+    },
+    "type=double": {
+      "model": "voidlings:block/black_acid_bricks"
+    },
+    "type=top": {
+      "model": "voidlings:block/black_acid_brick_slab_top"
+    }
+  }
+}

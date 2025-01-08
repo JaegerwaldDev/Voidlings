@@ -1,0 +1,20 @@
+{
+    "unchoosable": true,
+    "powers": [
+        "voidlings:voidling2/tuff_hearted",
+        "voidlings:burn_in_daylight",
+        "voidlings:vanish",
+        "voidlings:voidling2/dash",
+        "voidlings:fall_immunity",
+
+        "voidlings:voidling2/stabbable",
+        "voidlings:replacable_heart"
+    ],
+    "icon": {
+        "item": "voidlings:black_acid_chunk"
+    },
+    "order": 4,
+    "impact": 3,
+    "name": "Voidling",
+    "description": "Voidlings are silly creatures, who've been living at bedrock for billions of years. But in the past few decades, they've stepped foot on land, but aren't quite yet adjusted to their environment."
+}

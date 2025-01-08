@@ -23,6 +23,7 @@ public class VoidlingsClient implements ClientModInitializer {
 		registerBlockCutout(ModBlocks.ACID_SPROUTS);
 		registerBlockCutout(ModBlocks.VOID_TANGLE);
 		registerBlockCutout(ModBlocks.VOID_TANGLE_PLANT);
+		registerBlockCutout(ModBlocks.POTTED_VOID_TANGLE);
 		registerBlockCutout(ModBlocks.VOID_VINES);
 		registerBlockCutout(ModBlocks.VOID_VINES_PLANT);
 		registerBlockCutout(ModBlocks.VOID_BLOOM);

@@ -1,6 +1,7 @@
 {
     "replace": false,
     "origins": [
-        "voidlings:voidling"
+        "voidlings:voidling",
+        "voidlings:voidling2"
     ]
 }

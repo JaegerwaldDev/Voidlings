@@ -9,8 +9,9 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
+
+import static net.minecraft.block.Blocks.createFlowerPotBlock;
 
 public class ModBlocks {
     public static final Block BLACK_ACID = registerBlock("black_acid",
@@ -76,6 +77,7 @@ public class ModBlocks {
             ),
             false
     );
+    public static final Block POTTED_VOID_TANGLE = registerBlock("potted_void_tangle", createFlowerPotBlock(VOID_TANGLE), false);
 
     public static final Block LIQUID_ACID = registerBlock("liquid_acid",
             new SoulSandBlock(

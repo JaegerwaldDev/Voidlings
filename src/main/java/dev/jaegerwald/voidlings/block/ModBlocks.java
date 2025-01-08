@@ -23,6 +23,32 @@ public class ModBlocks {
                             .sounds(BlockSoundGroup.WET_GRASS)
             )
     );
+    public static final Block BLACK_ACID_BRICKS = registerBlock("black_acid_bricks",
+            new Block(
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.BLACK)
+                            .sounds(BlockSoundGroup.MUD_BRICKS)
+                            .strength(2.0F, 2.0F)
+                            .instrument(Instrument.BASEDRUM)
+                            .requiresTool()
+            )
+    );
+    public static final Block CRACKED_BLACK_ACID_BRICKS = registerBlock("cracked_black_acid_bricks",
+            new Block(AbstractBlock.Settings.copy(BLACK_ACID_BRICKS))
+    );
+    public static final Block BLACK_ACID_BRICK_STAIRS = registerBlock("black_acid_brick_stairs",
+            new StairsBlock(BLACK_ACID_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(BLACK_ACID_BRICKS))
+    );
+    public static final Block BLACK_ACID_BRICK_SLAB = registerBlock("black_acid_brick_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(BLACK_ACID_BRICKS))
+    );
+    public static final Block BLACK_ACID_BRICK_WALL = registerBlock("black_acid_brick_wall",
+            new WallBlock(AbstractBlock.Settings.copy(BLACK_ACID_BRICKS).solid())
+    );
+    public static final Block CHISELED_BLACK_ACID_BRICKS = registerBlock("chiseled_black_acid_bricks",
+            new Block(AbstractBlock.Settings.copy(BLACK_ACID_BRICKS))
+    );
+
     public static final Block ACID_SPROUTS = registerBlock("acid_sprouts",
             new AcidFolliageBlock(
                     AbstractBlock.Settings.create()
@@ -130,26 +156,6 @@ public class ModBlocks {
                             .pistonBehavior(PistonBehavior.DESTROY)
             ),
             false
-    );
-
-    public static final Block BLACK_ACID_BRICKS = registerBlock("black_acid_bricks", 
-            new Block(
-                    AbstractBlock.Settings.create()
-                            .mapColor(MapColor.BLACK)
-                            .sounds(BlockSoundGroup.MUD_BRICKS)
-                            .strength(2.0F, 2.0F)
-                            .instrument(Instrument.BASEDRUM)
-                            .requiresTool()
-            )
-    );
-    public static final Block BLACK_ACID_BRICK_STAIRS = registerBlock("black_acid_brick_stairs",
-            new StairsBlock(BLACK_ACID_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(BLACK_ACID_BRICKS))
-    );
-    public static final Block BLACK_ACID_BRICK_SLAB = registerBlock("black_acid_brick_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(BLACK_ACID_BRICKS))
-    );
-    public static final Block BLACK_ACID_BRICK_WALL = registerBlock("black_acid_brick_wall",
-            new WallBlock(AbstractBlock.Settings.copy(BLACK_ACID_BRICKS).solid())
     );
     
     public static final Block ACID_ENCASED_MURIA = registerBlock("acid_encased_muria",

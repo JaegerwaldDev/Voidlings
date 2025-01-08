@@ -21,7 +21,14 @@ public class ModItemGroups {
                         entries.add(ModItems.FRIED_LAMINA);
 
                         entries.add(ModBlocks.BLACK_ACID);
+                        entries.add(ModBlocks.BLACK_ACID_BRICKS);
+                        entries.add(ModBlocks.CRACKED_BLACK_ACID_BRICKS);
+                        entries.add(ModBlocks.BLACK_ACID_BRICK_STAIRS);
+                        entries.add(ModBlocks.BLACK_ACID_BRICK_SLAB);
+                        entries.add(ModBlocks.BLACK_ACID_BRICK_WALL);
+                        entries.add(ModBlocks.CHISELED_BLACK_ACID_BRICKS);
                         entries.add(ModItems.BLACK_ACID_CHUNK);
+
                         entries.add(ModBlocks.ACID_SPROUTS);
 
                         entries.add(ModBlocks.ACID_MILDEW);
@@ -30,11 +37,6 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.LIQUID_ACID);
                         entries.add(ModItems.VOID_BLOOM);
-
-                        entries.add(ModBlocks.BLACK_ACID_BRICKS);
-                        entries.add(ModBlocks.BLACK_ACID_BRICK_STAIRS);
-                        entries.add(ModBlocks.BLACK_ACID_BRICK_SLAB);
-                        entries.add(ModBlocks.BLACK_ACID_BRICK_WALL);
 
                         entries.add(ModBlocks.ACID_ENCASED_MURIA);
                         entries.add(ModItems.RAW_MURIA);

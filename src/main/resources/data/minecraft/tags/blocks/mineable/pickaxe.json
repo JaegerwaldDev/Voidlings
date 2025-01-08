@@ -3,9 +3,11 @@
   "values": [
     "voidlings:black_acid",
     "voidlings:black_acid_bricks",
+    "voidlings:cracked_black_acid_bricks",
     "voidlings:black_acid_brick_stairs",
     "voidlings:black_acid_brick_slab",
     "voidlings:black_acid_brick_wall",
+    "voidlings:chiseled_black_acid_bricks",
     "voidlings:acid_encased_muria"
   ]
 }

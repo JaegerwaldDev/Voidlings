@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "voidlings:acid_encased_muria"
+          "name": "voidlings:chiseled_black_acid_pillar"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "voidlings:blocks/acid_encased_muria"
+  "random_sequence": "voidlings:blocks/chiseled_black_acid_pillar"
 }

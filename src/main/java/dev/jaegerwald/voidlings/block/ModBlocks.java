@@ -48,6 +48,9 @@ public class ModBlocks {
     public static final Block CHISELED_BLACK_ACID_BRICKS = registerBlock("chiseled_black_acid_bricks",
             new Block(AbstractBlock.Settings.copy(BLACK_ACID_BRICKS))
     );
+    public static final Block CHISELED_BLACK_ACID_PILLAR = registerBlock("chiseled_black_acid_pillar",
+            new PillarBlock(AbstractBlock.Settings.copy(BLACK_ACID_BRICKS))
+    );
 
     public static final Block ACID_SPROUTS = registerBlock("acid_sprouts",
             new AcidFolliageBlock(
@@ -167,6 +170,15 @@ public class ModBlocks {
                             .sounds(BlockSoundGroup.WET_GRASS)
                             .requiresTool(),
                     ConstantIntProvider.create(0)
+            )
+    );
+    public static final Block MURIA_BLOCK = registerBlock("muria_block",
+            new Block(
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.BLACK)
+                            .requiresTool()
+                            .strength(50.0F, 1500.0F)
+                            .sounds(BlockSoundGroup.NETHERITE)
             )
     );
 

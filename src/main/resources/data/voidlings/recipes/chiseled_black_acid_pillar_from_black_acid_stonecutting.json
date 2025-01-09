@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "voidlings:black_acid"
+  },
+  "result": "voidlings:chiseled_black_acid_pillar"
+}

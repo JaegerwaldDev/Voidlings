@@ -41,6 +41,7 @@ public class ModItems {
     public static final Item MURIA_SHELL = registerItem("muria_shell", new Item(new Item.Settings()));
     public static final Item MURIA_ROD = registerItem("muria_rod", new Item(new Item.Settings()));
     public static final Item FRAMED_CLOTH = registerItem("framed_cloth", new Item(new Item.Settings()));
+    public static final Item MURIA_INGOT = registerItem("muria_ingot", new Item(new Item.Settings()));
 
     public static final Item FENNEC_MASK = registerItem("fennec_mask", new FennecMaskItem(new Item.Settings()));
     public static final Item REPLICA_WHISKERS = registerItem("replica_whiskers", new Item(new Item.Settings()));

@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "netherite_ingot",
+  "ingredients": [
+    {
+      "item": "voidlings:raw_muria"
+    },
+    {
+      "item": "voidlings:raw_muria"
+    },
+    {
+      "item": "voidlings:raw_muria"
+    },
+    {
+      "item": "voidlings:raw_muria"
+    },
+    {
+      "item": "voidlings:black_acid_chunk"
+    },
+    {
+      "item": "voidlings:black_acid_chunk"
+    },
+    {
+      "item": "voidlings:black_acid_chunk"
+    },
+    {
+      "item": "voidlings:black_acid_chunk"
+    }
+  ],
+  "result": {
+    "item": "voidlings:muria_ingot"
+  }
+}

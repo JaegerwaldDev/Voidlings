@@ -27,6 +27,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BLACK_ACID_BRICK_SLAB);
                         entries.add(ModBlocks.BLACK_ACID_BRICK_WALL);
                         entries.add(ModBlocks.CHISELED_BLACK_ACID_BRICKS);
+                        entries.add(ModBlocks.CHISELED_BLACK_ACID_PILLAR);
                         entries.add(ModItems.BLACK_ACID_CHUNK);
 
                         entries.add(ModBlocks.ACID_SPROUTS);
@@ -46,6 +47,8 @@ public class ModItemGroups {
                         entries.add(ModItems.MURIA_SHELL);
                         entries.add(ModItems.MURIA_ROD);
                         entries.add(ModItems.FRAMED_CLOTH);
+                        entries.add(ModItems.MURIA_INGOT);
+                        entries.add(ModBlocks.MURIA_BLOCK);
 
                         entries.add(ModItems.FENNEC_MASK);
                         entries.add(ModItems.REPLICA_WHISKERS);

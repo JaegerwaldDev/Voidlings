@@ -10,6 +10,7 @@ Mod that adds an origin, a dimension, weapons, items, decoration, etc.
     - [x] Overwater Blocks
     - [ ] Underwater Blocks
     - [ ] Hearts
+    - [ ] Armor
   - [ ] Worldgen
   - [ ] Entities
     - [ ] Giant Fish Thingie (to be named)

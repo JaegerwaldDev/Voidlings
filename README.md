@@ -12,6 +12,9 @@ Mod that adds an origin, a dimension, weapons, items, decoration, etc.
     - [ ] Hearts
     - [ ] Armor
   - [ ] Worldgen
+    - [X] Features
+    - [ ] Structures
+      - [ ] (Loot Tables)
   - [ ] Entities
     - [ ] Giant Fish Thingie (to be named)
     - [ ] Small Fishie (to be named)

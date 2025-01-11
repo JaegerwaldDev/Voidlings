@@ -42,7 +42,9 @@ public class VoidWispParticle extends SpriteBillboardParticle {
             velocityY += (lightAt(x, y - 0.5, z) - lightAt(x, y + 0.5, z)) * 0.01 + Math.sin(age * 0.08) * 0.001;
             velocityZ += (lightAt(x, y, z - 0.5) - lightAt(x, y, z + 0.5)) * 0.01 + Math.cos(age * 0.1) * 0.002;
 
-            if (world.getClosestPlayer(x, y, z, 32, false) instanceof PlayerEntity player) {
+            PlayerEntity player;
+            if (world.getClosestPlayer(x, y, z, 32, false) instanceof PlayerEntity) {
+                player = (PlayerEntity) world.getClosestPlayer(x, y, z, 32, false);
                 Vec3d playerVelocity = player.getVelocity();
                 velocityX += playerVelocity.getX() * 0.04;
                 velocityY += (playerVelocity.getY() + 0.08) * 0.04;

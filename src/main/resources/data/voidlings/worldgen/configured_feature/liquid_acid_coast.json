@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:disk",
+    "config": {
+        "state_provider": {
+            "fallback": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                    "Name": "voidlings:liquid_acid"
+                }
+            },
+            "rules": []
+        },
+        "radius": 2,
+        "half_height": 0,
+        "target": {
+            "type": "minecraft:all_of",
+            "predicates": [
+                {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                        0,
+                        1,
+                        0
+                    ],
+                    "blocks": "minecraft:air"
+                },
+                {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": "voidlings:black_acid"
+                }
+            ]
+        }
+    }
+}

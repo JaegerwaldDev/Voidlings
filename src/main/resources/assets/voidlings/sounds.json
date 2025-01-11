@@ -5,8 +5,8 @@
       "voidlings:item/surgeons_blade/stab"
     ]
   },
-  "item.surgeons_blade.voidling_breath": {
-    "subtitle": "subtitles.voidlings.item.surgeons_blade.voidling_breath",
+  "entity.voidling.breath": {
+    "subtitle": "subtitles.voidlings.entity.voidling.breath",
     "sounds": [
       "voidlings:item/surgeons_blade/voidling_breath"
     ]
@@ -16,6 +16,11 @@
     "sounds": [
       "minecraft:item/sweet_berries/pick_from_bush1",
       "minecraft:item/sweet_berries/pick_from_bush2"
+    ]
+  },
+  "ambient.hollow.loop": {
+    "sounds": [
+      "voidlings:ambient/hollow"
     ]
   }
 }

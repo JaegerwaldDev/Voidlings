@@ -21,6 +21,7 @@ public class VoidlingsClient implements ClientModInitializer {
 	public void onInitializeClient() {
 		// This entrypoint is suitable for setting up client-specific logic, such as rendering.
 		registerBlockCutout(ModBlocks.ACID_SPROUTS);
+		registerBlockCutout(ModBlocks.ACID_ROOTS);
 		registerBlockCutout(ModBlocks.VOID_TANGLE);
 		registerBlockCutout(ModBlocks.VOID_TANGLE_PLANT);
 		registerBlockCutout(ModBlocks.POTTED_VOID_TANGLE);

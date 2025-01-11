@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "voidlings:muria_rod"
+    },
+    "X": {
+      "item": "voidlings:muria_ingot"
+    }
+  },
+  "pattern": [
+    "XXX",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "voidlings:muria_pickaxe"
+  },
+  "show_notification": true
+}

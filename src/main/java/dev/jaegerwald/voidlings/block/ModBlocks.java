@@ -65,6 +65,18 @@ public class ModBlocks {
                             .luminance(state -> 8)
             )
     );
+    public static final Block ACID_ROOTS = registerBlock("acid_roots",
+            new AcidFolliageBlock(
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.DARK_AQUA)
+                            .replaceable()
+                            .noCollision()
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.WET_GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
 
     public static final Block ACID_MILDEW = registerBlock("acid_mildew",
             new AcidMildewBlock(
@@ -132,6 +144,7 @@ public class ModBlocks {
                             .breakInstantly()
                             .sounds(BlockSoundGroup.WET_GRASS)
                             .pistonBehavior(PistonBehavior.DESTROY)
+                            .ticksRandomly()
             ),
             false
     );

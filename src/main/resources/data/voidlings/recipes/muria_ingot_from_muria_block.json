@@ -1,14 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "netherite_ingot",
   "ingredients": [
     {
-      "item": "minecraft:netherite_block"
+      "item": "voidlings:muria_block"
     }
   ],
   "result": {
     "count": 9,
-    "item": "minecraft:netherite_ingot"
+    "item": "voidlings:muria_ingot"
   }
 }

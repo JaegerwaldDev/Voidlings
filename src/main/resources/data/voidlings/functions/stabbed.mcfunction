@@ -1,4 +1,4 @@
-playsound voidlings:item.surgeons_blade.voidling_breath player @a ~ ~ ~ 0.75 1
+playsound voidlings:entity.voidling.breath player @a ~ ~ ~ 0.75 1
 execute unless entity @s[tag=voidlings.stabbed] run give @s voidlings:broken_voidling_heart 1
 
 effect give @s minecraft:slowness 30 3 true

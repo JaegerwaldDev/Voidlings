@@ -2,15 +2,10 @@ package dev.jaegerwald.voidlings.item;
 
 import dev.jaegerwald.voidlings.Voidlings;
 import dev.jaegerwald.voidlings.block.ModBlocks;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.FoodComponent;
-import net.minecraft.item.FoodComponents;
 import net.minecraft.item.*;
-import dev.jaegerwald.voidlings.item.FennecMaskItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.util.Identifier;
 
 public class ModItems {
     // public static final Item BLACK_ACID = registerItem("black_acid", new Item(new Item.Settings()));
@@ -42,6 +37,11 @@ public class ModItems {
     public static final Item MURIA_ROD = registerItem("muria_rod", new Item(new Item.Settings()));
     public static final Item FRAMED_CLOTH = registerItem("framed_cloth", new Item(new Item.Settings()));
     public static final Item MURIA_INGOT = registerItem("muria_ingot", new Item(new Item.Settings()));
+
+    public static final Item MURIA_SHOVEL = registerItem("muria_shovel", new ShovelItem(ModToolMaterials.MURIA, 1.5F, -2.0F, new Item.Settings()));
+    public static final Item MURIA_PICKAXE = registerItem("muria_pickaxe", new PickaxeItem(ModToolMaterials.MURIA, 1, -2.0F, new Item.Settings()));
+    public static final Item MURIA_AXE = registerItem("muria_axe", new AxeItem(ModToolMaterials.MURIA, 6.0F, -2.0F, new Item.Settings()));
+    public static final Item MURIA_HOE = registerItem("muria_hoe", new HoeItem(ModToolMaterials.MURIA, -3, 0.0F, new Item.Settings()));
 
     public static final Item FENNEC_MASK = registerItem("fennec_mask", new FennecMaskItem(new Item.Settings()));
     public static final Item REPLICA_WHISKERS = registerItem("replica_whiskers", new Item(new Item.Settings()));

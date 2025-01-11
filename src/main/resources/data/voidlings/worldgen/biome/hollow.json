@@ -2,6 +2,9 @@
   "carvers": {},
   "downfall": 0.5,
   "effects": {
+    "ambient_sound": {
+        "sound_id": "voidlings:ambient.hollow.loop"
+    },
     "sky_color": 0,
     "fog_color": 0,
     "water_color": 859159,
@@ -13,7 +16,16 @@
       "probability": 0.001
     }
   },
-  "features": [],
+  "features": [
+    [
+      "voidlings:patch_void_bloom",
+      "voidlings:void_lamina",
+      "voidlings:acid_mildew_patch",
+      "voidlings:acid_roots",
+      "voidlings:liquid_acid_coast",
+      "voidlings:ore_acid_encased_muria"
+    ]
+  ],
   "has_precipitation": false,
   "spawn_costs": {},
   "spawners": {},

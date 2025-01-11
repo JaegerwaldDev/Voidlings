@@ -8,7 +8,6 @@ Mod that adds an origin, a dimension, weapons, items, decoration, etc.
 - [ ] The Hollow
   - [ ] Blocks/Items
     - [x] Overwater Blocks
-    - [ ] Underwater Blocks
     - [ ] Hearts
     - [ ] Armor
   - [ ] Worldgen
@@ -18,7 +17,6 @@ Mod that adds an origin, a dimension, weapons, items, decoration, etc.
   - [ ] Entities
     - [ ] Giant Fish Thingie (to be named)
     - [ ] Small Fishie (to be named)
-    - [ ] Axolotl-like thingie (to be named)
 - [ ] Origin
   - [x] Eat Void Lamina
   - [x] Movement Abilities from V1
@@ -38,6 +36,5 @@ Mod that adds an origin, a dimension, weapons, items, decoration, etc.
   - [ ] Advancements
   - [X] Decoration Blocks (most are added, but ill still have to find out what i need while building)
   - [ ] Plushies
-  - [ ] Paintings
   
   ...

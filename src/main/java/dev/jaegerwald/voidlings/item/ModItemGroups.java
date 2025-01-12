@@ -55,6 +55,11 @@ public class ModItemGroups {
                         entries.add(ModItems.MURIA_AXE);
                         entries.add(ModItems.MURIA_HOE);
 
+                        entries.add(ModItems.MURIA_HELMET);
+                        entries.add(ModItems.MURIA_CHESTPLATE);
+                        entries.add(ModItems.MURIA_LEGGINGS);
+                        entries.add(ModItems.MURIA_BOOTS);
+
                         entries.add(ModItems.FENNEC_MASK);
                         entries.add(ModItems.REPLICA_WHISKERS);
 

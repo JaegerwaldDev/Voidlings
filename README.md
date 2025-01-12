@@ -9,9 +9,9 @@ Mod that adds an origin, a dimension, weapons, items, decoration, etc.
   - [ ] Blocks/Items
     - [x] Overwater Blocks
     - [ ] Hearts
-    - [ ] Armor
+    - [x] Armor
   - [ ] Worldgen
-    - [X] Features
+    - [x] Features
     - [ ] Structures
       - [ ] (Loot Tables)
   - [ ] Entities
@@ -29,12 +29,11 @@ Mod that adds an origin, a dimension, weapons, items, decoration, etc.
 - [ ] Weapons/Tools
   - [x] Fennec Mask
   - [x] Surgeon's Blade
-  - [ ] Rest of Fennec Equipment Stuff
   
   ...
 - [ ] Miscellaneous
   - [ ] Advancements
-  - [X] Decoration Blocks (most are added, but ill still have to find out what i need while building)
+  - [x] Decoration Blocks (most are added, but ill still have to find out what i need while building)
   - [ ] Plushies
   
   ...

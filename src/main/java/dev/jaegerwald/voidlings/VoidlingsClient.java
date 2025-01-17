@@ -1,6 +1,8 @@
 package dev.jaegerwald.voidlings;
 
 import dev.jaegerwald.voidlings.block.ModBlocks;
+import dev.jaegerwald.voidlings.entity.ModEntities;
+import dev.jaegerwald.voidlings.entity.SomneerEntityRenderer;
 import dev.jaegerwald.voidlings.particle.Particles;
 import dev.jaegerwald.voidlings.particle.VoidWispParticle;
 import dev.jaegerwald.voidlings.rendering.HollowDimensionEffects;
@@ -8,6 +10,7 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.DimensionRenderingRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.registry.RegistryKey;
@@ -33,6 +36,8 @@ public class VoidlingsClient implements ClientModInitializer {
 
 		DimensionRenderingRegistry.registerDimensionEffects(HOLLOW, new HollowDimensionEffects());
 		DimensionRenderingRegistry.registerCloudRenderer(RegistryKey.of(RegistryKeys.WORLD, HOLLOW), new HollowDimensionEffects.CloudRenderer());
+
+		EntityRendererRegistry.register(ModEntities.SOMNEER, SomneerEntityRenderer::new);
 	}
 
 	private void registerBlockCutout(Block block) {

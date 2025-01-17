@@ -5,6 +5,7 @@ import dev.jaegerwald.voidlings.item.ModItems;
 import dev.jaegerwald.voidlings.block.ModBlocks;
 import dev.jaegerwald.voidlings.particle.Particles;
 import dev.jaegerwald.voidlings.sound.ModSounds;
+import dev.jaegerwald.voidlings.util.ModRegistries;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;
@@ -33,6 +34,8 @@ public class Voidlings implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModRegistries.register();
 	}
 
 	public static Identifier id(String name) {

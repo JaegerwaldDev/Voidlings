@@ -17,6 +17,11 @@ Mod that adds an origin, a dimension, weapons, items, decoration, etc.
   - [ ] Entities
     - [ ] Giant Fish Thingie (to be named)
     - [ ] Small Fishie (to be named)
+- [ ] Limbo
+  - [ ] Worldgen
+    - [ ] Features
+  - [ ] Way Out
+  - [ ] Some Blocks to make the place "unique"
 - [ ] Origin
   - [x] Eat Void Lamina
   - [x] Movement Abilities from V1
@@ -34,6 +39,5 @@ Mod that adds an origin, a dimension, weapons, items, decoration, etc.
 - [ ] Miscellaneous
   - [ ] Advancements
   - [x] Decoration Blocks (most are added, but ill still have to find out what i need while building)
-  - [ ] Plushies
   
   ...

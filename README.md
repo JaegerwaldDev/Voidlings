@@ -27,6 +27,8 @@ Mod that adds an origin, a dimension, weapons, items, decoration, etc.
   - [x] Movement Abilities from V1
   - [ ] Different Stages
   - [x] Heart Replacements (sorta, the bases are there)
+  - [ ] Dash into the Hollow
+  - [ ] The Demigod Part
 - [ ] Translation
   - [ ] Origin
   - [ ] Items

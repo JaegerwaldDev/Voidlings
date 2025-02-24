@@ -1,3 +1,6 @@
+>[!WARNING]
+> This mod has been (temporarily) archived, since the server it was made for will not be getting a third season soon. Maybe in the futue though.
+
 # Voidlings
 Mod that adds an origin, a dimension, weapons, items, decoration, etc.
 
